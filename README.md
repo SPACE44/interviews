@@ -75,7 +75,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Contributing
 
-Please read [our git and best practice guides](https://github.com/SPACE44/guides) for details on our coding style, and the process for submitting pull requests to us.
+Please read [our git and best practice guides](https://github.com/SPACE44/guides) for details on our coding style, and the process for submitting pull requests to us. All pull requests will be denied if they don't follow our guide standards.
 
 ## Versioning
 
