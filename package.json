@@ -8,11 +8,11 @@
   "author": "Daniel Leitner <daniel@space44.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json",
     "precommit": "yarn lint",
     "prepush": "yarn lint && yarn test",
-    "lint": "tslint -c tslint.json -p tsconfig.json",
-    "test": "jest",
-    "release": "release"
+    "release": "release",
+    "test": "jest"
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
