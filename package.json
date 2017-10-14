@@ -1,0 +1,43 @@
+{
+  "name": "interviews",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Platform for managing possible candidates.",
+  "main": "index.js",
+  "repository": "https://github.com/SPACE44/interviews.git",
+  "author": "Daniel Leitner <daniel@space44.com>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "yarn lint",
+    "prepush": "yarn lint && yarn test",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "jest",
+    "release": "release"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "nodemon": "^1.12.1",
+    "release": "^2.5.2",
+    "ts-jest": "^21.1.2",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__test__/**/*.test.(ts|js)"
+    ],
+    "testEnvironment": "node"
+  }
+}
