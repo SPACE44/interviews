@@ -15,6 +15,8 @@ The tasks are orderd by importance from highest to lowest.
 
 ## Tasks
 
+Note: Lists should be orded by date from latest to oldest.
+
 ### List images
 
 In your first task you should list all images from the images folder. Therefore you should use the storage.json, where you find information about each image.
@@ -59,3 +61,10 @@ Add the same functionality to the detail view of each image.
 Add pagination to the list view. E.g. only show 3 images per page. You can implement it in a static way and can assume you always have 6 images you can load from the server.
 
 Represent the current page in the route. 
+
+### Empty States
+
+Add empty states to the application:
+
+- No images from the server: Show no images message
+- No comments yet: Show no comments message
